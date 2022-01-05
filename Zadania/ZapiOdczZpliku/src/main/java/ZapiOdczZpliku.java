@@ -14,6 +14,8 @@ public class ZapiOdczZpliku extends javax.swing.JFrame {
      */
     public ZapiOdczZpliku() {
         initComponents();
+        f =new File("dane.txt");
+        
     }
 
     /**
@@ -27,8 +29,8 @@ public class ZapiOdczZpliku extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -46,7 +48,9 @@ public class ZapiOdczZpliku extends javax.swing.JFrame {
             }
         });
 
-        jScrollPane1.setViewportView(jTextPane1);
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane2.setViewportView(jTextArea1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -55,7 +59,7 @@ public class ZapiOdczZpliku extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane1)
+                    .addComponent(jScrollPane2)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButton1)
                         .addGap(274, 274, 274)
@@ -65,9 +69,9 @@ public class ZapiOdczZpliku extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
@@ -79,11 +83,12 @@ public class ZapiOdczZpliku extends javax.swing.JFrame {
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         //write to file
-        String data=jTextPane1.getText();
+        String data=jTextArea1.getText();
         try
         {
             FileWriter fw=new FileWriter(f);
             fw.write(data);
+            jTextArea1.setText("");
             fw.close();
         }
         catch(IOException ex)
@@ -99,7 +104,7 @@ public class ZapiOdczZpliku extends javax.swing.JFrame {
         while(sc.hasNext()){
            data+=sc.nextLine()+"\n";
         }
-        jTextPane1.setText(data);
+        jTextArea1.setText(data);
     }catch(FileNotFoundException ex){
         Logger.getLogger(ZapiOdczZpliku.class.getName()).log(level.SEVERE, null, ex);
     }
@@ -145,7 +150,7 @@ public class ZapiOdczZpliku extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }
