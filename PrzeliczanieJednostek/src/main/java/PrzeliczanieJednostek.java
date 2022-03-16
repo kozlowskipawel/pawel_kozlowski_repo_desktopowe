@@ -2,6 +2,10 @@
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+<<<<<<< HEAD
+=======
+import java.util.Scanner;
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
 import java.util.logging.Logger;
 
 /*
@@ -20,7 +24,11 @@ public class PrzeliczanieJednostek extends javax.swing.JFrame {
      */
     public PrzeliczanieJednostek() {
         initComponents();
+<<<<<<< HEAD
         File f = new File("odleglosc.txt");
+=======
+        File f = new File("plik.txt");
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
     }
 
     /**
@@ -40,12 +48,22 @@ public class PrzeliczanieJednostek extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jSpinner1 = new javax.swing.JSpinner();
+<<<<<<< HEAD
+=======
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jSpinner2 = new javax.swing.JSpinner();
+<<<<<<< HEAD
+=======
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -69,6 +87,13 @@ public class PrzeliczanieJednostek extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< HEAD
+=======
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -86,6 +111,10 @@ public class PrzeliczanieJednostek extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(184, Short.MAX_VALUE))
+<<<<<<< HEAD
+=======
+            .addComponent(jScrollPane1)
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -100,7 +129,12 @@ public class PrzeliczanieJednostek extends javax.swing.JFrame {
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
+<<<<<<< HEAD
                 .addContainerGap(175, Short.MAX_VALUE))
+=======
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE))
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
         );
 
         jTabbedPane1.addTab("Odległość", jPanel2);
@@ -119,6 +153,13 @@ public class PrzeliczanieJednostek extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< HEAD
+=======
+        jTextArea2.setColumns(20);
+        jTextArea2.setRows(5);
+        jScrollPane2.setViewportView(jTextArea2);
+
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -135,7 +176,12 @@ public class PrzeliczanieJednostek extends javax.swing.JFrame {
                         .addComponent(jLabel1)
                         .addGap(18, 18, 18)
                         .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
+<<<<<<< HEAD
                 .addContainerGap(104, Short.MAX_VALUE))
+=======
+                .addContainerGap(117, Short.MAX_VALUE))
+            .addComponent(jScrollPane2)
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -150,7 +196,12 @@ public class PrzeliczanieJednostek extends javax.swing.JFrame {
                     .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addComponent(jButton2)
+<<<<<<< HEAD
                 .addContainerGap(167, Short.MAX_VALUE))
+=======
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE))
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
         );
 
         jTabbedPane1.addTab("Temperatura", jPanel3);
@@ -169,6 +220,14 @@ public class PrzeliczanieJednostek extends javax.swing.JFrame {
         jMenu1.setText("Plik");
 
         jMenuItem1.setText("Pokaż historię");
+<<<<<<< HEAD
+=======
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
         jMenu1.add(jMenuItem1);
 
         jMenuItem2.setText("Zamknij");
@@ -215,9 +274,15 @@ public class PrzeliczanieJednostek extends javax.swing.JFrame {
         jLabel4.setText(""+kilometry);
         try
         {
+<<<<<<< HEAD
             File f = new File("odleglosc.txt");
             FileWriter fw=new FileWriter(f);
             fw.write(" "+kilometry+";");
+=======
+            File f = new File("plik.txt");
+            FileWriter fw=new FileWriter(f,true);
+            fw.write(" "+metry+" = "+kilometry+";");
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
             
             fw.close();
         }
@@ -236,11 +301,49 @@ public class PrzeliczanieJednostek extends javax.swing.JFrame {
         int celsjusz =(int) jSpinner2.getValue();
         float kelvin=(float) (celsjusz+273.15);
         jLabel6.setText(""+kelvin);
+<<<<<<< HEAD
+=======
+        try
+        {
+            File f = new File("plik.txt");
+            FileWriter fw=new FileWriter(f,true);
+            fw.write(" "+celsjusz+" = "+kelvin+";");
+            
+            fw.close();
+        }
+        catch(IOException ex)
+        {
+            Logger.getLogger(PrzeliczanieJednostek.class.getName()).log(level.SEVERE, null, ex);
+        }
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
         
        
       
     }//GEN-LAST:event_jButton2ActionPerformed
 
+<<<<<<< HEAD
+=======
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+       //historia
+       try
+        {
+            File f = new File("plik.txt");
+            Scanner sc=new Scanner(f);
+            String data="";
+            while(sc.hasNext())
+            {
+            data+=sc.nextLine()+"\n";
+            }
+            jTextArea1.setText(data);
+            jTextArea2.setText(data);
+        }
+        catch(IOException ex)
+        {
+            Logger.getLogger(PrzeliczanieJednostek.class.getName()).log(level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
     /**
      * @param args the command line arguments
      */
@@ -294,8 +397,18 @@ public class PrzeliczanieJednostek extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+<<<<<<< HEAD
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JSpinner jSpinner2;
     private javax.swing.JTabbedPane jTabbedPane1;
+=======
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JSpinner jSpinner2;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
     // End of variables declaration//GEN-END:variables
 }

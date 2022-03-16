@@ -13,6 +13,12 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Poka&#x17c; histori&#x119;"/>
               </Properties>
+<<<<<<< HEAD
+=======
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1ActionPerformed"/>
+              </Events>
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
               <Properties>
@@ -120,6 +126,10 @@
                           </Group>
                           <EmptySpace pref="184" max="32767" attributes="0"/>
                       </Group>
+<<<<<<< HEAD
+=======
+                      <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -137,7 +147,12 @@
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
                           <EmptySpace pref="175" max="32767" attributes="0"/>
+=======
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jScrollPane1" pref="157" max="32767" attributes="0"/>
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -174,6 +189,24 @@
                 </Component>
                 <Component class="javax.swing.JSpinner" name="jSpinner1">
                 </Component>
+<<<<<<< HEAD
+=======
+                <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextArea" name="jTextArea1">
+                      <Properties>
+                        <Property name="columns" type="int" value="20"/>
+                        <Property name="rows" type="int" value="5"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="jPanel3">
@@ -203,8 +236,14 @@
                                   <Component id="jSpinner2" min="-2" pref="98" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+<<<<<<< HEAD
                           <EmptySpace pref="104" max="32767" attributes="0"/>
                       </Group>
+=======
+                          <EmptySpace pref="117" max="32767" attributes="0"/>
+                      </Group>
+                      <Component id="jScrollPane2" alignment="0" max="32767" attributes="0"/>
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -222,7 +261,12 @@
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
                           <EmptySpace pref="167" max="32767" attributes="0"/>
+=======
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jScrollPane2" pref="149" max="32767" attributes="0"/>
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -259,6 +303,24 @@
                 </Component>
                 <Component class="javax.swing.JSpinner" name="jSpinner2">
                 </Component>
+<<<<<<< HEAD
+=======
+                <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextArea" name="jTextArea2">
+                      <Properties>
+                        <Property name="columns" type="int" value="20"/>
+                        <Property name="rows" type="int" value="5"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+>>>>>>> fc407c0a29839372e6c49b9e53876d7b41f202f3
               </SubComponents>
             </Container>
           </SubComponents>
